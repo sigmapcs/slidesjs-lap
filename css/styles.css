@@ -1,0 +1,95 @@
+@import url("https://file.myfontastic.com/dukkMftkPuyx2goc3yNZhR/icons.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Oswald:400,700");
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0; }
+
+[class^="icon-"]::before {
+  position: relative;
+  top: 3px; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+h1 {
+  text-align: center;
+  margin: 1em 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+.container {
+  width: 95%;
+  min-height: 100px;
+  margin: 0 auto;
+  max-width: 1200px; }
+
+.slider {
+  width: 100%;
+  outline: 1px solid green;
+  overflow: hidden;
+  position: relative; }
+  .slider__wrapper {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    position: relative;
+    left: -100%; }
+  .slider__nav, .slider__pagination {
+    position: absolute; }
+  .slider__nav {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.4);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: .2;
+    transition: all .3s;
+    color: #fff; }
+    @media screen and (max-width: 678px) {
+      .slider__nav {
+        width: 37.5px;
+        height: 37.5px;
+        font-size: 1.5em; } }
+    .slider__nav:hover {
+      opacity: .8; }
+    .slider__nav.prev {
+      left: 1rem; }
+    .slider__nav.next {
+      right: 1rem; }
+  .slider__pagination {
+    bottom: .5em;
+    right: .5em;
+    list-style: none;
+    padding: 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .slider__pagination li {
+      margin: 0 .3em; }
+    .slider__pagination .active::before {
+      position: relative;
+      top: 3px !important; }
